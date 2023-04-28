@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap%27%27');
+
+* {
+    margin: 0;
+    padding: 20px;
+}
+
+body {
+    background: #a4c3b2;
+}
+
+/* grid concept */
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+    "main main main sidebar"
+    "main main main sidebar"
+    "con con con sidebar"
+    "footer footer footer footer";
+    grid-gap: 50px;
+}
+
+.gridmain {
+    grid-area: main;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #0f1c21;
+    animation: loading 1s infinite alternate;
+}
+
+.gridmain:nth-child(1) {
+    grid-area: main;
+}
+
+.gridsidebar {
+    grid-area: sidebar;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #0f1c21;
+}
+
+.gridcontent {
+    grid-area: con;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #0f1c21;
+    animation: loading 1s infinite alternate;
+}
+
+.gridfooter {
+    grid-area: footer;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #0f1c21;
+    animation: loading 1s infinite alternate;
+}
+
+@keyframes loading {
+    to {
+        background-position: -100% 0;
+        background-color: #cce3de;
+    }
+}
+
+/* basket */
+.gridsidebar:hover {
+    transform: scale(0.98);
+    transition: transform 0.2s ease-in-out;
+}
+
+.gridsidebar p {
+    display: grid;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    animation: textanim 1s;
+}
+
+.items {
+    margin-top: -80px;
+}
+
+.item {
+    display: flex;
+    margin: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 20px 20px 0px #0f1c21;
+}
+
+/* button buy */
+.kupi {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #0f1c21;
+    transition: color .5s;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #cce3de;
+    color: #000;
+}
+   
+.kupi:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #000;
+    height: 250px;
+    width: 450px;
+    border-radius: 50%;
+}
+   
+.kupi:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.kupi:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+@keyframes textanim {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

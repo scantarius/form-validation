@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/concept.css">
+    <link rel="stylesheet" href="/main.css"> 
+    <title>JS form-validation</title>
+</head>
+<body>
+    <div id="container">
+        <div class="gridmain"></div>
+        <div class="gridmain"></div>
+        <div class="gridsidebar">
+            <p>Basket</p>
+            <div class="items">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <button class="kupi" onclick="openFormList()">BUY >></button>
+            </div>
+        </div>
+        <div class="gridcontent"></div>
+        <div class="gridfooter"></div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h2>Finish purchase</h2>
+        </div>
+        <form class="form" id="form">
+                <div class="form-inputs">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Full Name" id="name" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-inputs">
+                    <label>Phone Number</label>
+                    <input type="number" placeholder="Phone Number" id="phonenumber" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-inputs">
+                    <label>Adress</label>
+                    <input type="text" placeholder="Adress" id="adress" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-inputs">
+                    <label>House Number</label>
+                    <input type="number" placeholder="House Number" id="housenumber" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-inputs">
+                    <label>Post Number</label>
+                    <input type="number" placeholder="Post number" id="postnumber" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-inputs">
+                    <label>City</label>
+                    <input type="text" placeholder="City" id="city" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-inputs">
+                    <label>Email</label>
+                    <input type="text" placeholder="Email" id="email" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-inputs">
+                    <label>Extra Notes</label>
+                    <input type="text" placeholder="Extra Notes" id="last" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+        </form>
+
+        <div class="buttons">
+            <button class="close" onclick="hideFormList()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                </svg>
+            </button>
+            <button id="finish" onclick="checkInputs()">FINISH</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
