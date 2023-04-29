@@ -1,3 +1,4 @@
 # form-validation
 Full responsive concept with JavaScript Validation and CSS Animation
-![Screenshot_1](https://user-images.githubusercontent.com/32017278/235324923-f8abc198-44c1-415d-a7d3-d7b897ea8977.png)
+![scantarius github io_form-validation_](https://user-images.githubusercontent.com/32017278/235325419-8c952a46-08c0-44c7-bc1e-fa5b52ff5ef3.png)
+![scantarius github io_form-validation_ (1)](https://user-images.githubusercontent.com/32017278/235325421-d914c4db-9bdb-4c59-8ca2-4f04bf79dc5d.png)
